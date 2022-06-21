@@ -16,6 +16,9 @@
 
 ```python
 # TODO: you code here...
-```
+number = int(input('введите число: '))
+if number > 99 and number < 1000 or number < -99 and number > -1000:
+    print('Да')
+else:
+    print('Нет')
 
----
