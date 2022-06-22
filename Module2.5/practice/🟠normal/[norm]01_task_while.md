@@ -32,9 +32,12 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('число от 1 до 20: '))
+s = 0
+star = '*'
+while s<n:
+    s = s + 1
+    print(s*star)
 
 ---
 
