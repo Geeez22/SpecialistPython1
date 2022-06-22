@@ -8,3 +8,22 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+n = int(input('Введите длину шоколадки '))
+m = int(input('Введите ширину шоколадки '))
+k = int(input('ВВедите кол-во долек'))
+portions_count = n * m
+
+if k >= portions_count:
+    print('NO')
+elif k < 0:
+    print('Введите натуральное число долек')
+elif n < 0:
+    print('Введите натуральное число длины')
+elif m < 0:
+    print('Введите натуральное число ширины')
+elif portions_count % ((n - k) * n) == 0:
+    print('YES')
+elif portions_count % ((m - k) * m) == 0:
+    print('YES')
+else:
+    print('NO')
