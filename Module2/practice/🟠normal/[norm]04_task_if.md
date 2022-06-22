@@ -20,7 +20,14 @@
 
 ```python
 # TODO: you code here...
-```
+number_input = int(input('number: '))
+if number_input % 3 == 0 and number_input % 5 != 0:
+    print('Foo')
+elif number_input % 5 == 0 and number_input % 3 != 0:
+    print('Bar')
+elif number_input % 3 == 0 and number_input % 5 == 0:
+    print('FooBar')
+
 
 ---
 
