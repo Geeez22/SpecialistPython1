@@ -16,8 +16,12 @@
 
 ```python
 text = "Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете."
-# TODO: you code here...
-```
+
+new_text = ""
+text_find = int(text.find(","))
+if text_find > 0:
+    new_text = text.replace(text[text_find], '')
+print(new_text)
 
 ---
 
