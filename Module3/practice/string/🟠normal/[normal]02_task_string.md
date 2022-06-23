@@ -17,8 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+input_sting = input('same string: ')
+id_sting = "id:"+input_sting
+user_input = id_sting[3:]
+if user_input.isdigit():
+    print('да')
+else:print('нет')
 
 ---
 
